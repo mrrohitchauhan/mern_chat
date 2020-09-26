@@ -9,10 +9,10 @@ const app = express();
 const port = process.env.PORT || 9000;
 
 const pusher = new Pusher({
-    appId: '1067373',
-    key: 'a797dbcb045192246fd8',
-    secret: 'cc1796de4ff341c04cd4',
-    cluster: 'ap2',
+    appId: '****',
+    key: '****',
+    secret: '****',
+    cluster: '****',
     encrypted: true
 });
 
@@ -20,7 +20,7 @@ const pusher = new Pusher({
 app.use(express.json());
 app.use(cors());
 //Db config
-const connection_url = 'mongodb+srv://rohit:1EHT7rZyU2Jfuj8M@cluster0.tkegh.mongodb.net/whatsappdb?retryWrites=true&w=majority'
+const connection_url = 'mongo_connection_url'
 
 mongoose.connect(connection_url, {
     useCreateIndex: true,
